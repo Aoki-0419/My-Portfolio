@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオ">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ここまでがhead -->
+<!-- ここからbody -->
+
+<body class="wf-sawarabimincho">
+  <!-- ヘッダー -->
+  <!-- PC用ナビゲーションメニュー -->
+  <header>
+    <div class="header">
+      <div class="header-name">Miria   Aoki</div>
+        <div class="header-name"><a href="index.html">TOP</a></div>
+        <div class="header-name"><a href="about.html">ABOUT</a></div>
+        <div class="header-name"><a href="works.html">WORKS</a></div>
+        <div class="header-name"><a href="contact.html">CONTACT</a></div>
+    </div>
+  
+  <!-- スマホ用メニューボタン -->
+  <img id="menu-sp" src="img/nav.png" alt="ハンバーガーメニュー" onclick="document.getElementById('nav-sp').style.display = 'block';">
+  <!-- スマホ用ナビゲーションメニュー -->
+  <div id="nav-sp">
+    <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <div class="menu"><a href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">TOP</a></div>
+    <div class="menu"><a href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></div>
+    <div class="menu"><a href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></div>
+    <div class="menu"><a href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></div>
+  </header> 
+
+  <!-- メイン -->
+  <main>
+    <!-- TOP-->
+    <section>
+      <div class="img-main">
+      <img src="img/main.jpg" alt="メイン画像">
+      </div>
+    </section>
+      
+    <!-- ABOUT -->
+    <section>
+      <h2 class="h2-text" >About</h2>
+    <div class="about">
+      <img class="img-profile" src="img/profile.jpg" alt="プロフィール画像">
+      <div class="about-right">
+      <h3 class="about-me">私について</h3>
+      <p>2024年3月よりWEBデザイナーを目指し、侍エンジニアに入学。<br>
+      お客様の要望に沿ったデザインをご提案し、より丁寧な仕事ができるよう日々勉強中です。</p>
+      
+        <!-- ボタン -->
+        <div class="btn">
+          <a href="about.html">more</a>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- WORKS -->
+    <section>
+      <h2>Works</h2>
+      <div class="img-works" >
+
+        <div class="img-item">      
+          <img class="img-banner box fadeIn" src="img/works/転職バナー.jpg" alt="転職バナー">
+          <p class="comment">転職バナー</p>
+        </div>
+
+        <div class="img-item">     
+          <img class="img-banner box fadeIn" src="img/works/宣伝バナー.jpg" alt="宣伝バナー">
+          <p class="comment">宣伝バナー</p>
+        </div>
+
+        <div class="img-item">   
+          <img class="img-banner box fadeIn" src="img/works/京都ツアー.jpg" alt="京都旅行バナー">
+          <p class="comment">京都旅行バナー</p>
+        </div>
+     
+    </div>
+    <!-- ボタン  -->
+    <div class="btn">
+      <a href="works.html">more</a>
+    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact-text">
+      <p>お仕事のご相談やご依頼などお気軽にご連絡ください♪</p>
+        </div>
+      <div class="btn">
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+    </div>
+    
+    </section>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+<!-- フッター -->
+<footer>
+  <div class="footer">
+  <p class="footer-text">&copy; MIRIA AOKI</p>
+  </div>
+</footer>
+</html>

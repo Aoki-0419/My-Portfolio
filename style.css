@@ -1,0 +1,690 @@
+@charset "UTF-8";
+
+/* PC、スマホ共通設定 */
+.wf-sawarabimincho { 
+  font-family: "Sawarabi Mincho"; 
+  color: #5a5a5a;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* ボタン */
+.btn a {
+  background: #6bb6ff;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 180px;
+  height: 30px;
+  padding: 10px 25px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.btn a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.btn a:hover {
+  background: #b0c4de;
+  color: #FFF;
+}
+.btn a:hover:after {
+  right: 1.4rem;
+}
+/*================
+  PC用のスタイル
+  =================*/
+  @media screen and (min-width: 768px) {
+body {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1rem;
+  width: 80%;
+  margin: 50px auto;
+  background: linear-gradient(transparent 60%, #f0f8ff);
+}
+
+/* 画像に動きをつける*/
+.fade-in {
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fadeIn{
+  animation-name:fadeInAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeInTrigger {
+    opacity: 0;
+  }
+
+
+/* ヘッダー */
+.header { 
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #f0f8ff;
+}
+
+  /* ナビ固定のためのCSS */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+  }
+
+.header-name {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.header-name a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+.header-name:nth-of-type(1)  {
+  font-size: 40px;
+  width: 300px;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+/* スマホ用ナビ非表示 */
+#menu-sp {
+  display: none;
+}
+#nav-sp {
+  display: none;
+}
+/* ここまでヘッダー */
+/* ここからメイン */
+
+  /* TOP */
+.img-main {
+  text-align: center;
+  margin-top: 100px;
+}
+
+  /* ABOUT */
+.img-profile {
+  display: flex;
+  border-radius: 50%;
+  border: 10px solid #f0f8ff;
+  width: 300px;
+  height: auto;
+  margin: 20px 20px 20px 200px;
+}
+
+.about {
+display: flex;
+}
+
+.about-me {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+}
+.about-right {
+  width: 480px;
+  height: 200px;
+  background-color: #f0f8ff;
+  margin: auto;
+  padding: 50px;
+}
+/* WORKS */
+.img-works {
+  display: flex;
+  gap: 30px;
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.img-item {
+  width: 33.333%;
+}
+
+.img-banner {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #f0f8ff;
+}
+
+.comment {
+  text-align: center;
+}
+
+/* CONTACT */
+.contact-text {
+  display: flex;
+  margin: 80px auto;
+  justify-content: center;
+  font-size: 20px;
+}
+
+
+/* フッター */
+.footer {
+  width: 100%;
+  height: 80px;
+  margin-top: 100px;
+  background-color: #f0f8ff;
+}
+
+.footer-text {
+  text-align: center;
+  padding-top: 30px;
+}
+/* ここまでがindex.htmlのCSS */
+/* ここからがabout.htmlのCSS */
+.about-title {
+  margin-top: 130px;
+}
+.profile-me {
+  display: flex;
+  margin: 50px;
+}
+
+.profile-me img {
+  width: 350px;
+  height: 350px;
+  margin-left: 10%;
+  border: 8px solid #f0f8ff;
+}
+
+.profile-me p {
+  background-color: #f0f8ff;
+  margin-right: 10%;
+  margin-left: 5%;
+  padding: 45px;
+  line-height: 2.5em;
+  font-size: 15px;
+}
+/* スキルの画像について */
+.skill {
+  display: flex;
+  justify-content: center;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  margin-bottom: 0;
+}
+.skill-item {
+  text-align: center;
+}
+/* ここまでがabout.htmlのCSS */
+/* ここからがworks.htmlのCSS */
+.works-title {
+  margin-top: 130px;
+}
+.works1 {
+  text-align: center;
+  margin: 50px;
+}
+.works1 img {
+  width:60%;
+  border: 8px solid #f0f8ff;
+}
+.works2 {
+  text-align: center;
+  margin: 50px;
+}
+.works2 img {
+  width: 60%;
+  border: 8px solid #f0f8ff;
+}
+.works3 {
+  text-align: center;
+  margin: 50px;
+}
+.works3 img {
+  width: 60%;
+  border: 8px solid #f0f8ff;
+}
+
+/* ここまでがworks.htmlのCSS */
+/* ここからがcontact.htmlのCSS */
+.contact-title h2 {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1rem;
+  width: 80%;
+  margin: 150px auto;
+  background: linear-gradient(transparent 60%, #f0f8ff);
+}
+.form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.form-item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-label span {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #6bb6ff;
+  color: #fff;
+  font-size: 14px;
+}
+.form-input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.form-text {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.form-btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #6bb6ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+}
+
+/*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+    body {
+      min-width: 375px;
+      margin: 0 auto;
+    }
+    /* 各セクションタイトル */
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 1rem;
+      width: 85%;
+      margin: 30px auto;
+      background: linear-gradient(transparent 60%, #f0f8ff);
+    }
+    
+    /* ヘッダー */
+    .header {
+      background-color: #f0f8ff;
+      height: 50px;
+    }
+    
+    .header-name:nth-of-type(1) {
+      font-size: 30px;
+      padding-left: 20px;
+    }
+    .header-name a {
+      display: none;
+    }
+    /* ハンバーガーメニュー */
+    #menu-sp {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* ナビゲーションの表示切り替え */
+    #nav-sp {
+      background-color: #f0f8ff;
+      position: absolute;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      display: none;
+      z-index: 100;
+    }
+
+    #nav-sp > a {
+      display: block;
+    }
+
+    #nav-sp > .menu a {
+      text-decoration: none;
+      display: block;
+      margin: 50px 20px;
+      height: 50px;
+      font-size: 20px;
+      color: #5a5a5a;
+    }
+
+    /* 閉じるボタン */
+    #close {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+    }
+    /* メイン */
+    /* TOP */
+    .img-main {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      max-width: 767px;
+    }
+    .img-main img{
+      width: 85%;
+      margin: 20px auto;
+    }
+    /* ABOUT */
+    .about {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 767px;
+    }
+    .about img {
+      margin-bottom: 20px;
+      width: 200px;
+      border-radius: 50%;
+      border: 10px solid #f0f8ff;
+    }
+    .about-right {
+      width: 80%;
+      height: 80%;
+      background-color: #f0f8ff;
+      margin: auto;
+      padding: 30px;
+    }
+    .about p {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    /* WORKS */
+    .img-works {
+      display: block;
+    }
+    .img-item {
+      text-align: center;
+      margin: 0 auto;
+      width: 85%;
+    }
+    .img-item img {
+      width: 90%;
+      border: 4px solid #f0f8ff;
+    }
+    .comment {
+      text-align: center;
+      margin-top: 0;
+      }
+    
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 767px;
+    }
+
+    .contact-text {
+      text-align: center;
+      font-size: 14.5px;
+      margin: 20px;
+      padding: 10px;
+    }
+    /* フッター */
+    .footer {
+      background-color: #f0f8ff;
+      width: 100%;
+      height: 30px;
+      margin: 0;
+    }
+    .footer p {
+      text-align: center;
+    }
+    /* ここまでがindex.htmlのCSS */
+    /* ここからがabout.htmlのCSS */
+      .profile-me {
+        display: block;
+      }
+      .profile-me img {
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        border: 8px solid #f0f8ff;
+      }
+      .profile-me p {
+        background-color: #f0f8ff;
+        margin: 40px;
+        padding: 40px;
+        line-height: 2em;
+        font-size: 15px;
+      }
+
+      .skill {
+        display: block;
+      }
+      .skill img {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+      }
+      .skill-item {
+        text-align: center;
+      }
+    /* ここまでがabout.htmlのCSS */
+    /* ここからがworks.htmlのCSS */
+    .works1 {
+      text-align: center;
+    }
+    .works1 img {
+      width: 80%;
+      margin: 30px;
+    }
+    .works2 {
+      text-align: center;
+    }
+    .works2 img {
+      width: 80%;
+      margin: 30px;
+    }
+    .works3 {
+      text-align: center;
+    }
+    .works3 img {
+      width: 80%;
+      margin: 30px;
+    }
+    /* ここまでがworks.htmlのCSS */
+    /* ここからがcontact.htmlのCSS */
+    .form {
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+    }
+    
+    .form-item {
+      margin: 0 auto;
+      border-top: 1px solid #ddd;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .form-label {
+      width: 100%;
+      max-width: 248px;
+      letter-spacing: 0.05em;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    
+    .form-label span {
+      border-radius: 6px;
+      margin-right: 8px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 48px;
+      display: inline-block;
+      text-align: center;
+      background: #6bb6ff;
+      color: #fff;
+      font-size: 14px;
+    }
+    .form-input {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 48px;
+      flex: 1;
+      width: 100%;
+      max-width: 410px;
+      background: #eaedf2;
+      font-size: 15px;
+    }
+    
+    .form-text {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 216px;
+      flex: 1;
+      width: 100%;
+      max-width: 410px;
+      background: #eaedf2;
+      font-size: 18px;
+    }
+    
+    .form-btn {
+      border-radius: 6px;
+      margin-top: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 280px;
+      display: block;
+      letter-spacing: 0.05em;
+      background: #6bb6ff;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      border: none;
+    }
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオ">
+  <title>私について</title>
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ここまでがhead -->
+<!-- ここからbody -->
+<body class="wf-sawarabimincho">
+  <!-- ヘッダー -->
+  <!-- PC用ナビゲーションメニュー -->
+  <header>
+    <div class="header">
+      <div class="header-name">Miria   Aoki</div>
+        <div class="header-name"><a href="index.html">TOP</a></div>
+        <div class="header-name"><a href="about.html">ABOUT</a></div>
+        <div class="header-name"><a href="works.html">WORKS</a></div>
+        <div class="header-name"><a href="contact.html">CONTACT</a></div>
+    </div>
+
+    <!-- スマホ用メニューボタン -->
+  <img id="menu-sp" src="img/nav.png" alt="ハンバーガーメニュー" onclick="document.getElementById('nav-sp').style.display = 'block';">
+  <!-- スマホ用ナビゲーションメニュー -->
+  <div id="nav-sp">
+    <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <div class="menu"><a href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">TOP</a></div>
+    <div class="menu"><a href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></div>
+    <div class="menu"><a href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></div>
+    <div class="menu"><a href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></div>
+  </header>
+
+    <section>
+    <div class="about-title">
+    <h2>私について</h2>
+    </div>
+    <div class="profile-me">
+    <img src="img/profile.jpg" alt="イメージ画像">
+    <p>2020年大阪音楽大学卒業後、家電量販店内の携帯ショップにて販売業を経験。<br>
+      IT業界の発展と人手不足という状況に興味を持ち、知識を深めたいという考えから2023年よりPCとネットワークのヘルプデスク業務に転職。<br>
+      学生時代に演奏会のチラシやプログラムを作成した経験と今のITの知識を生かしてWEBデザイナーになるための学習をしたいと思い、2024年侍エンジニアに入学。
+      販売業やヘルプデスク業務で培ったコミュニケーション能力と相手の立場に寄り添った考え方を持つことを生かし、未経験ですが様々なことに挑戦中です。
+    </p>
+    </div>
+  </section>
+  <section>
+    <h2>学んだスキル</h2>
+  <div class="skill">
+    <div class="skill-item">
+      <img src="img/skill/html.png" alt="html">
+      <p>HTML/CSS</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/skill/js.png" alt="js">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/skill/photoshop.png" alt="Photoshop">
+      <p>Photoshop</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/skill/wordpress.png" alt="WordPress">
+      <p>WordPress</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/skill/jquery.png" alt="jquery">
+      <p>jQuery</p>
+    </div>
+    </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+
+  <footer>
+  <div class="footer">
+    <p class="footer-text">&copy; MIRIA AOKI</p>
+    </div>
+  </footer>
+
+  </html>

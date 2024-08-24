@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオ">
+  <title>作品</title>
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ここまでがhead -->
+ <!-- ここからbody -->
+ <body class="wf-sawarabimincho">
+  <!-- ヘッダー -->
+  <!-- PC用ナビゲーションメニュー -->
+  <header>
+    <div class="header">
+      <div class="header-name">Miria   Aoki</div>
+        <div class="header-name"><a href="index.html">TOP</a></div>
+        <div class="header-name"><a href="about.html">ABOUT</a></div>
+        <div class="header-name"><a href="works.html">WORKS</a></div>
+        <div class="header-name"><a href="contact.html">CONTACT</a></div>
+    </div>
+
+    <!-- スマホ用メニューボタン -->
+  <img id="menu-sp" src="img/nav.png" alt="ハンバーガーメニュー" onclick="document.getElementById('nav-sp').style.display = 'block';">
+  <!-- スマホ用ナビゲーションメニュー -->
+  <div id="nav-sp">
+    <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+    <div class="menu"><a href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">TOP</a></div>
+    <div class="menu"><a href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></div>
+    <div class="menu"><a href="works.html" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></div>
+    <div class="menu"><a href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></div>
+  </header>
+  
+    <div class="works-title">
+      <h2>取り組んだ作品</h2>
+      </div>
+
+      <div class="works1">
+        <img src="img/works/転職バナー.jpg" alt="転職バナー">
+      </div>
+      <div class="works2">
+        <img src="img/works/宣伝バナー.jpg" alt="宣伝バナー">
+      </div>
+      <div class="works3">
+        <img src="img/works/京都ツアー.jpg" alt="京都ツアー">
+      </div>
+
+      <h2>continue...</h2>
+      
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+ </body>
+
+ <footer>
+  <div class="footer">
+    <p class="footer-text">&copy; MIRIA AOKI</p>
+    </div>
+  </footer>
+
+  </html>
